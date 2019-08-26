@@ -14,12 +14,14 @@ Install library from `npm`
 npm install --save lcsvcn/react-native-svg-uri#master
 ```
 From React-Native 0.60.0
+
 Unlink library react-native-svg
 ```bash
 react-native unlink react-native-svg # not react-native-svg-uri !!!
 ```
 
 Below React-Native 0.60.0
+
 Link library react-native-svg
 
 ```bash
