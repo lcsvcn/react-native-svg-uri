@@ -1,9 +1,10 @@
 # react-native-svg-uri
 Render SVG images in React Native from an URL or a static file
 
-This was tested with RN 0.33 and react-native-svg 4.3.1 (depends on this library)
+This was tested with RN 60.5 and react-native-svg 9.7.0 (depends on this library)
 [react-native-svg](https://github.com/react-native-community/react-native-svg)
 
+This was forked from https://github.com/vault-development/react-native-svg-uri
 
 Not all the svgs can be rendered, if you find problems fill an issue or a PR in
 order to contemplate all the cases
@@ -13,14 +14,14 @@ Install library from `npm`
 ```bash
 npm install --save lcsvcn/react-native-svg-uri#master
 ```
-From React-Native 0.60.0
+<b>From React-Native 0.60.0</b>
 
 Unlink library react-native-svg
 ```bash
 react-native unlink react-native-svg # not react-native-svg-uri !!!
 ```
 
-Below React-Native 0.60.0
+<b>Below React-Native 0.60.0</b>
 
 Link library react-native-svg
 
@@ -42,6 +43,8 @@ react-native link react-native-svg # not react-native-svg-uri !!!
 - [ANDROID] There is a problem with static SVG file on Android,
   Works OK in debug mode but fails to load the file in release mode.
   At the moment the only workaround is to pass the svg content in the svgXmlData prop.
+- [ANDROID] There is a problem with URI SVG file on Android,
+  Blinking the SVG if need to move image.
 
 ## <a name="Usage">Usage</a>
 
